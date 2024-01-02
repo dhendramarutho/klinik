@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Aplikasi Klinik Pratama</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMaster">
+    <property name="title">
+     <string>Master</string>
+    </property>
+    <addaction name="actionPasien"/>
+    <addaction name="actionDokter"/>
+    <addaction name="actionObat"/>
+    <addaction name="actionUser"/>
+    <addaction name="actionLogin"/>
+   </widget>
+   <widget class="QMenu" name="menuTransaksi">
+    <property name="title">
+     <string>Transaksi</string>
+    </property>
+    <addaction name="actionPeriksa"/>
+    <addaction name="actionPenjualan_Obat"/>
+    <addaction name="actionPembelian_Obat"/>
+   </widget>
+   <widget class="QMenu" name="menuLaporan">
+    <property name="title">
+     <string>Laporan</string>
+    </property>
+    <addaction name="actionData_Pasien"/>
+    <addaction name="actionData_Dokter"/>
+    <addaction name="actionData_Obat"/>
+    <addaction name="actionLaporan_Pemeriksaan"/>
+   </widget>
+   <addaction name="menuMaster"/>
+   <addaction name="menuTransaksi"/>
+   <addaction name="menuLaporan"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPasien">
+   <property name="text">
+    <string>Pasien</string>
+   </property>
+  </action>
+  <action name="actionDokter">
+   <property name="text">
+    <string>Dokter</string>
+   </property>
+  </action>
+  <action name="actionPeriksa">
+   <property name="text">
+    <string>Periksa</string>
+   </property>
+  </action>
+  <action name="actionData_Pasien">
+   <property name="text">
+    <string>Data Pasien</string>
+   </property>
+  </action>
+  <action name="actionData_Dokter">
+   <property name="text">
+    <string>Data Dokter</string>
+   </property>
+  </action>
+  <action name="actionData_Obat">
+   <property name="text">
+    <string>Data Obat</string>
+   </property>
+  </action>
+  <action name="actionLaporan_Pemeriksaan">
+   <property name="text">
+    <string>Laporan Pemeriksaan</string>
+   </property>
+  </action>
+  <action name="actionObat">
+   <property name="text">
+    <string>Obat</string>
+   </property>
+  </action>
+  <action name="actionPenjualan_Obat">
+   <property name="text">
+    <string>Penjualan Obat</string>
+   </property>
+  </action>
+  <action name="actionPembelian_Obat">
+   <property name="text">
+    <string>Pembelian Obat</string>
+   </property>
+  </action>
+  <action name="actionUser">
+   <property name="text">
+    <string>User</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
