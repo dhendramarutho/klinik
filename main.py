@@ -13,8 +13,6 @@ class MainMenu(QMainWindow):
         super().__init__()
         loadUi('views/main_windows.ui',self)
         self.showMaximized()
-        # self.user = user
-        # self.role = role
 
         self.actionPasien.triggered.connect(self.showPasienForm)
         self.actionDokter.triggered.connect(self.showDokterForm)
@@ -26,7 +24,6 @@ class MainMenu(QMainWindow):
         self.non_active_menu()
 
     def activate_menus(self,data):
-        # Aktifkan menu sesuai dengan peran pengguna
         role = data["role"]
         if role == "admin":
             self.actionPasien.setEnabled(True)
@@ -116,7 +113,7 @@ class MainMenu(QMainWindow):
         self.formLogin.setModal(True)
         self.formLogin.show()
 
-        if self.actionLogin.text() == "Logut":
+        if self.actionLogin.text() == "Logout":
             self.non_active_menu()
     
     def showFormPenjualan(self):
